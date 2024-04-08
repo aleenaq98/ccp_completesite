@@ -1,0 +1,406 @@
+h1{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 10%;
+    font-weight: 900;
+    color: #ffffff;
+    background-image: linear-gradient(45deg, #f174d2,#57cad9);
+    text-shadow: 2px 2px 2px #964679;
+}
+
+h2{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #2b474d;
+    text-align: center;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    background-color: #964679;
+}
+
+p{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2b474d;
+    font-weight: 400;
+    line-height: 150%;
+    padding: 10px 0px 10px 0px;
+}
+
+main{
+    margin: 10px;
+}
+
+body {
+    background-image: url("../images/wallpaper.png");
+}
+
+img{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #bcbcbc;
+}
+
+
+div{
+    padding: 10px;
+    /* margin: 10px; */
+}
+
+/*
+ul .nav{
+    display: inline;
+} */
+
+nav{
+    background-color: #b9dfe7;
+    padding: 25px;
+    text-align: center;
+}
+
+ul.nav li{
+    display: grid;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+    margin: 5px;
+}
+
+a{
+    padding: 10px;
+    border: 1px #054851 solid;
+    border-radius: 5px;
+}
+
+li a:hover{
+    background-color: #96c6cf;
+    color: white;
+}
+
+li.active a{
+    font-weight: bold;
+    background-color: #679aa3;
+    color: white;
+    font-size:x-large;
+}
+
+.skip-to-main-content-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+
+.skip-to-main-content-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.photo-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    /* padding: 10px; */
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    justify-self: center;
+    align-self: center;
+    background-color: #e8e8e8;
+}
+
+.recipe-info h3{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #964679;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+ul li{
+    list-style-type: disc;
+    margin: 20px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ol li{
+    list-style-type: decimal;
+    margin: 20px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer{
+    /* background-color: #b9dfe7; */
+    padding: 25px;
+    text-align: center;
+    background-image: linear-gradient(45deg, #f174d2,#57cad9);
+}
+
+footer p{
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #964679;
+}
+
+img.gif{
+    width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gif {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    ul.nav li{
+        display: inline-block;
+    }
+
+    a{
+        float: left;
+        width: 120px;
+    }
+
+    .skip-to-main-content-link{
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-1{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        /* text-align: justify; */
+    }
+
+    /* nav{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        display: unset;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: #696969 5px 5px 5px;
+    } */
+
+    .section-info{
+        display: flex;
+        flex-direction: column;
+        /* text-align: justify; */
+    }
+
+    .section{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        /* text-align: justify; */
+        width: auto;
+    }
+
+    .section-text{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* text-align: justify; */
+        width: auto;
+    }
+
+    .section-vermont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        /* text-align: justify; */
+        width: 100%;
+    }
+
+    .photo-gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #e4cbe1;
+    }
+
+    body {
+        background-image: url("../images/digitalbgs-04.webp");
+    }
+
+    .recipe-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .photo-gallery-travel{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        /* padding: 10px; */
+        width: 100%;
+        justify-content: center;
+        /* justify-items: center; */
+        align-content: center;
+        justify-self: center;
+        align-self: center;
+        align-items: center;
+        background-color: #e8e8e8;
+    }
+
+    div.photo-gallery-travel p{
+        text-align: left;
+    }
+
+    /* EXTRAS */
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-20px);
+        }
+        60% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .element {
+        animation: bounce 2s 1;
+    }
+
+/* 
+    backgorund animation */
+    body {
+        background: linear-gradient(90deg, #bcf5fd, #e2c4fd);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    @keyframes waveAnimation {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        25%, 75% {
+            transform: translateY(-10px);
+        }
+        50% {
+            transform: translateY(0);
+        }
+    }
+    
+    .wave-text {
+        display: inline-block;
+        animation: waveAnimation 2s infinite;
+    }
+
+}
+
+@media screen and (min-width: 1920px){
+    ul.nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    nav{
+        background-color: #964679;
+    }
+     
+    a{
+        color: #ffffff;
+        border: #e2c4fd solid 1px;
+    }
+
+    .section-2, .section-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        background-color: #ffffff;
+
+    }
+
+    .recipe-highlights{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    body{
+        background: none;
+        background-color: #f9ebf3;
+    }
+
+    h1{
+        background-color:#679aa3;
+        background-image: none;
+    }
+
+    /* div.section{
+        background-color: #f1f1f1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
+     /* div.section img{
+        width: 100%;
+    } */
+
+    .photo-gallery-travel{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .section-bangkok{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    /* .section-text{
+        flex-direction: row;
+        width: auto;
+    } */
+
+    .section-vermont{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+/* 
+    .photo-gallery{
+        grid-gap: 0;
+    } */
+
+    /* unique addition */
+    /* body {
+        cursor: url("../images/cheese.png"), auto;
+      } */
+
+}
